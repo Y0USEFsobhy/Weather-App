@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#06283D] font-Parkinsans flex justify-center items-center h-dvh">
+  <div id="card" class="bg-white px-4 py-4 rounded-2xl w-[360px] h-[75px]  duration-300 overflow-hidden sm:m-3 "> 
+    <div id="" class="flex justify-between items-center max-w-full">
+      <img class="w-8" src="images/location-icon.svg" alt="">
+      <input id="cityInput" class=" text-xl bg-transparent px-2 border-none outline-none uppercase w-[70%] placeholder:capitalize placeholder:text-[#06283D]" type="text" autocomplete="off" placeholder="Enter Your Location">
+      <button id="search" type="submit">
+        <img class="bg-[#dff6ff] w-11 rounded-full p-2" src="images/search-icon.svg" alt="">
+      </button>
+    </div>
+    <!-- _________________ -->
+     <div class="flex flex-col justify-center items-center">
+      <img id="mainImg" class="w-[60%] " src="" alt="">
+      <h1 id="temp" class="mt-6 text-5xl font-bold "></h1>
+      <p id="desc" class="mt-2 text-xl font-bold "></p>
+     </div>
+      <!-- _________________ -->
+      <div id="details" class="flex justify-around mt-6">
+        <div class="left flex items-center">
+          <img class="h-12" src="images/waves.svg" alt="">
+          <div class="ml-2">
+            <h2 id="Humidity" class="font-bold text-lg"></h2>
+            <p class="text-sm">Humidity</p>
+          </div>
+        </div>
+
+        <div class="right flex items-center ">
+          <img class="h-12" src="images/air.svg" alt="">
+          <div class="ml-2">
+            <h3 id="wind" class="font-bold text-lg"></h3>
+            <p class="text-sm">Wind speed</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+    <script src="src/main.js"></script>
+</body>
+</html>
